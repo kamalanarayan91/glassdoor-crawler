@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.hobby'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin:'application'
+mainClassName = "org.hobby.Crawler"
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile 'com.konghq:unirest-java:2.3.08'
+}
